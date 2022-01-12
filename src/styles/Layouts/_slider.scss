@@ -1,0 +1,53 @@
+.slider {
+  background-image: url("./banner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 657px;
+  .slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 657px;
+    .slider__slogan {
+      span {
+        display: block;
+        line-height: 1.3;
+        text-transform: uppercase;
+        @include text($color-white-0, $fs-19, $fw-bold);
+      }
+    }
+    .slider__thread {
+      display: flex;
+      flex-direction: column;
+      padding-top: 44px;
+      padding-bottom: 111px;
+      span {
+        line-height: 1.71;
+        @include text($color-white-0, $fs-1, $fw-normal);
+      }
+    }
+    .slider_btn {
+      display: flex;
+      align-items: center;
+
+      > span {
+        @include text($color-white-0, $fs-1, $fw-normal);
+        margin-right: 10px;
+      }
+      .btn {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        span {
+          color: $color-clear-blue;
+        }
+      }
+    }
+  }
+}

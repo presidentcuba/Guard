@@ -1,0 +1,45 @@
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 401px;
+  background-color: $color-bg;
+  padding: 81px 0px;
+  .more__content {
+    text-align: center;
+    .more__title {
+      span {
+        @include text($color-clear-blue, $fs-18, $fw-bold-300);
+      }
+    }
+    .more__info {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0px;
+      span {
+        line-height: 1.38;
+        @include text($color-black-4, $fs-55, $fw-normal);
+      }
+    }
+    .more__btn {
+      width: 218px;
+      height: 50px;
+      justify-content: center;
+      border-radius: 25px;
+      margin: auto;
+      background-color: #157eff;
+      display: flex;
+      align-items: center;
+
+      .btn {
+        width: 100%;
+        padding: 0px 20px;
+        color: $color-white-0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

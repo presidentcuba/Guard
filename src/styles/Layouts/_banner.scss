@@ -1,0 +1,33 @@
+.banner {
+  background-color: $color-clear-blue;
+  height: 376px;
+  .banner__content {
+    display: flex;
+    height: 376px;
+    justify-content: space-between;
+    align-items: center;
+    .banner__content_left {
+      margin-right: 200px;
+      p {
+        @include text($color-white-0, $fs-48, $fw-bold);
+        line-height: 1.25;
+      }
+      span {
+        @include text($color-white-0, $fs-48, $fw-bold);
+        line-height: 1.25;
+      }
+    }
+    .banner__content_right {
+      width: 830px;
+      .banner__content_one {
+        display: block;
+        margin-bottom: 50px;
+      }
+      span {
+        line-height: 1.88;
+
+        @include text($color-white-0, $fs-16, $fw-bold-300);
+      }
+    }
+  }
+}

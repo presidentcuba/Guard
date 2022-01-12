@@ -1,0 +1,93 @@
+.value {
+  height: 1099px;
+  padding: 120px 0px;
+  background-color: $color-bg;
+  .value__content {
+    .value__title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        @include text($color-black-4, $fs-40, $fw-normal);
+        line-height: 1.38;
+        margin-bottom: 40px;
+      }
+      .content {
+        display: block;
+        margin-bottom: 10px;
+        @include text($color-black-4, $fs-18, $fw-bold-300);
+        line-height: 1.56;
+      }
+      span {
+        @include text($color-black-4, $fs-18, $fw-bold-300);
+        line-height: 1.56;
+      }
+    }
+    .content_body {
+      margin-top: 80px;
+      display: flex;
+      .content_one {
+        .item {
+          padding: 15px 0px;
+          @include text($color-black-4, $fs-3, $fw-bold-300);
+          .title {
+            display: block;
+            padding: 20px 0px;
+          }
+          .content {
+            display: inline-block;
+            width: 100%;
+            line-height: 1.25;
+          }
+        }
+      }
+
+      .content_three {
+        text-align: right;
+        .item {
+          padding: 15px 0px;
+          @include text($color-black-4, $fs-3, $fw-bold-300);
+          .title {
+            display: block;
+            padding: 20px 0px;
+          }
+          .content {
+            display: inline-block;
+            width: 100%;
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+  }
+
+  .more__btn {
+    justify-content: center;
+    border-radius: 25px;
+    margin: auto;
+    background-color: $color-black-4;
+    display: flex;
+    align-items: center;
+    width: 218px;
+    .btn {
+      display: inline-block;
+      padding: 16px 25px;
+      width: 218px;
+      color: $color-white-0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+.content_two {
+  img {
+    display: block;
+  }
+}
+.image {
+  padding: 0px 10px;
+  width: 560px;
+  height: 527px;
+}

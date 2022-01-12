@@ -1,0 +1,62 @@
+.procedureMore {
+  padding: 120px 0px;
+  .procedureMore__content {
+    .procedureMore__box {
+      padding: 40px 0px;
+      display: flex;
+      .procedureMore__image {
+        flex: 1;
+        width: 50%;
+        padding: 0px !important;
+        display: flex;
+        align-items: right;
+        justify-content: center;
+        img {
+          width: 479px;
+          height: 407px;
+        }
+      }
+      .procedureMore__item {
+        flex: 1;
+        margin-top: 70px;
+        width: 50%;
+        .procedureMore__title {
+          span {
+            line-height: 1.19;
+            @include text($color-black-4, $fs-40-5, $fw-normal);
+          }
+        }
+        .two {
+          width: 72%;
+          text-align: left;
+          span {
+            display: inline-block;
+            width: 70%;
+          }
+        }
+        .thread {
+          margin-right: 200px !important;
+        }
+
+        .procedureMore__thread {
+          .title {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0px;
+            .main_title {
+              line-height: 1.3;
+              @include text($color-black-4, $fs-4, $fw-normal);
+              margin-bottom: 20px;
+            }
+            span {
+              display: inline-block;
+              width: 75%;
+              @include text($color-black-4, $fs-17-5, $fw-normal);
+              line-height: 1.63;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.footer {
+  padding: 79px 0px;
+  .footer__content {
+    .content_top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .left {
+        ul {
+          display: flex;
+          li {
+            a {
+              padding-right: 20px;
+              @include text($color-black-4, $fs-1, $fw-bold-500);
+            }
+          }
+        }
+      }
+      .right {
+        a {
+          img {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .content_bot {
+    display: flex;
+    flex-direction: column;
+    .contact {
+      display: inline-block;
+      line-height: 1.67;
+      width: 40%;
+      margin-bottom: 40px;
+    }
+    span {
+      @include text($color-gray-4, $fs-1, $fw-bold-300);
+    }
+  }
+}
